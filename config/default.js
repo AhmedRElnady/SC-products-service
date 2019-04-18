@@ -4,7 +4,7 @@ module.exports = {
            url: "http://localhost:4000",
            prefix: "products"
         },
-        shopping_cart: {
+        cart: {
            url: "http://localhost:5000",
            prefix: "shopping-carts"
         }
