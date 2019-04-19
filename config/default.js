@@ -8,5 +8,16 @@ module.exports = {
            url: "http://localhost:5000",
            prefix: "shopping-carts"
         }
+     },
+     acl: {
+        roles: {
+           ADMIN: {
+              resources: [
+                  "/",
+                  "/:id"
+              ],
+              permissions: ["post", "patch", "delete"]
+           }
+        }
      }
 }
