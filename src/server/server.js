@@ -33,6 +33,10 @@ function bootstrap(port, dbHost, dbName) {
 
         app.use('/products', productRoutes);
 
+        app.use((err, req, res, next) => {
+            console.log("$$$$ err $$$$", err);
+        })
+        
         process.on('uncaughtException', (err)=> {
             console.log(">>>> err ", err);
         });
