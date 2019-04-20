@@ -17,6 +17,10 @@ module.exports = {
                   "/:id"
               ],
               permissions: ["post", "patch", "delete"]
+           }, 
+           CUSTOMER: {
+              resources: [],
+              permissions: []
            }
         }
      }
